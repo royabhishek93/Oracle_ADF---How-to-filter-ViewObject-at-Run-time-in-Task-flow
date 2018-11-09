@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="homePageDef"
+                Package="com.abhishek.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <taskFlow id="emptaskflow1" taskFlowId="/WEB-INF/emp-task-flow.xml#emp-task-flow" activation="deferred"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding"/>
+    <taskFlow id="PassParameterRuntimeinExecuteWithParam1"
+              taskFlowId="/WEB-INF/PassParameterRuntimeinExecuteWithParam.xml#PassParameterRuntimeinExecuteWithParam"
+              activation="deferred" xmlns="http://xmlns.oracle.com/adf/controller/binding"/>
+  </executables>
+  <bindings/>
+</pageDefinition>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14"
+                id="emp_task_flow_emp_task_flow_ExecuteWithParamsPageDef" Package="com.abhishek.view.pageDefs"
+                SkipValidation="true">
+  <parameters/>
+  <executables>
+    <iterator Binds="EmployeesVO1" RangeSize="25" DataControl="AppModuleDataControl" id="EmployeesVO1Iterator"
+              Refresh="never"/>
+  </executables>
+  <bindings>
+    <action IterBinding="EmployeesVO1Iterator" id="ExecuteWithParams" RequiresUpdateModel="true"
+            Action="executeWithParams">
+      <NamedData NDName="firstNameVar" NDValue="#{'S'}" NDType="java.lang.String"/>
+    </action>
+  </bindings>
+</pageDefinition>
